@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Pariya\\AndroidStudioProjects\\Calculator_1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-et\\values-et.xml",
+            "outputFile": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-et\\values-et.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Pariya\\.gradle\\caches\\transforms-3\\efcb57b63f917a8735f7b296fbd19cf4\\transformed\\material-1.6.0\\res\\values-et\\values-et.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Pariya\\AndroidStudioProjects\\Calculator_1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Pariya\\.gradle\\caches\\transforms-3\\efcb57b63f917a8735f7b296fbd19cf4\\transformed\\material-1.6.0\\res\\values-night-v8\\values-night-v8.xml",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Pariya\\.gradle\\caches\\transforms-3\\02e0bd612fca2a22099e175f45d3c7d6\\transformed\\appcompat-1.4.1\\res\\values-night-v8\\values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,46",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "100,170,254,338,434,536,638,4110",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "165,249,333,429,531,633,727,4194"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Pariya\\AndroidStudioProjects\\Calculator_1\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -54,6 +37,23 @@
                         "endLines": "21",
                         "endColumns": "12",
                         "endOffsets": "1451"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Pariya\\.gradle\\caches\\transforms-3\\02e0bd612fca2a22099e175f45d3c7d6\\transformed\\appcompat-1.4.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,46",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,170,254,338,434,536,638,4110",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "165,249,333,429,531,633,727,4194"
                     }
                 }
             ]
