@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Calculator_1</string>
+    <string name="info">Cant\' divide by zero.</string>
 </resources>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button btnAC,btnC,btnDiv,btnMul,btnSub,btnAdd,btnPer,btnPoint,btnEqual;
@@ -50,48 +51,47 @@ public class MainActivity extends AppCompatActivity {
         else if (id == R.id.btnPoint)
             setNumber(".");
         else if (id == R.id.btnAdd){
+            if(flag == true){
+                equal();
+            }
             num1 = Float.parseFloat(textView.getText().toString());
             op = "+";
             textView.setText("+");
         }
         else if (id == R.id.btnSub){
+            if(flag == true){
+                equal();
+            }
             num1 = Float.parseFloat(textView.getText().toString());
             op = "-";
             textView.setText("-");
         }
         else if (id == R.id.btnMul){
+            if(flag == true){
+                equal();
+            }
             num1 = Float.parseFloat(textView.getText().toString());
             op = "×";
             textView.setText("×");
         }
         else if (id == R.id.btnDiv){
+            if(flag == true){
+                equal();
+            }
             num1 = Float.parseFloat(textView.getText().toString());
             op = "÷";
             textView.setText("÷");
         }
         else if (id == R.id.btnPer){
+            if(flag == true){
+                equal();
+            }
             num1 = Float.parseFloat(textView.getText().toString());
             op = "%";
             textView.setText("%");
         }
         else if (id == R.id.btnEqual){
-            num2 = Float.parseFloat(textView.getText().toString());
-            float result = 0;
-            if(op == "+")
-                result = num1 + num2;
-            else if(op == "-")
-                result = num1 - num2;
-            else if(op == "×")
-                result = num1 * num2;
-            else if(op == "÷")
-                result = num1 / num2;
-            else if(op == "%")
-                result = (num1/100) * num2;
-
-            textView.setText(result+"");
-            num1 = num2 = 0;
-            op = "";
-            flag = false;
+            equal();
         }
         else if (id == R.id.btnAC){
             num1 = num2 = 0;
@@ -129,6 +129,30 @@ public class MainActivity extends AppCompatActivity {
             else
                 textView.setText(tmp+number);
         }
+    }
+
+    void equal(){
+        num2 = Float.parseFloat(textView.getText().toString());
+        float result = 0;
+        if(op == "+")
+            result = num1 + num2;
+        else if(op == "-")
+            result = num1 - num2;
+        else if(op == "×")
+            result = num1 * num2;
+        else if(op == "÷"){
+            if(num2 == 0)
+                Toast.makeText(MainActivity.this , R.string.info , Toast.LENGTH_LONG).show();
+            else
+                result = num1 / num2;
+        }
+        else if(op == "%")
+            result = (num1/100) * num2;
+
+        textView.setText(result+"");
+        num1 = num2 = 0;
+        op = "";
+        flag = false;
     }
 
     void findViews(){
