@@ -12,6 +12,7 @@
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Calculator_1</string>
     <string name="info">Cant\' divide by zero.</string>
+    <string name="info1">invalid format used.</string>
     <style name="Theme.Calculator_1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

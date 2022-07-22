@@ -1,7 +1,6 @@
 package com.example.calculator_1;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,13 +9,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnAC,btnC,btnDiv,btnMul,btnSub,btnAdd,btnPer,btnPoint,btnEqual;
+    private Button btnAC,btnSign,btnDiv,btnMul,btnSub,btnAdd,btnPer,btnPoint,btnEqual;
     private Button btn0,btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9;
     private TextView textView;
 
     float num1,num2;
     String op = "";
-    boolean flag = false;
+    boolean flagNum2 = false;
+    boolean flagPoint = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
             setNumber("0");
         else if (id == R.id.btn1)
             setNumber("1");
-        else if (id == R.id.btn2)
-            setNumber("2");
+        else if (id == R.id.btn2){
+            setNumber("2");}
         else if (id == R.id.btn3)
             setNumber("3");
         else if (id == R.id.btn4)
@@ -48,58 +48,106 @@ public class MainActivity extends AppCompatActivity {
             setNumber("8");
         else if (id == R.id.btn9)
             setNumber("9");
-        else if (id == R.id.btnPoint)
-            setNumber(".");
+        else if (id == R.id.btnPoint){
+            if(flagPoint == true){
+                setNumber(".");
+                flagPoint = false;
+            }
+        }
         else if (id == R.id.btnAdd){
-            if(flag == true){
+            flagPoint = true;
+            if(flagNum2 == true){
                 equal();
             }
-            num1 = Float.parseFloat(textView.getText().toString());
-            op = "+";
-            textView.setText("+");
+            if(op != "") {
+                textView.getText().toString();
+                op = "+";
+                textView.setText("+");
+            }
+            else {
+                num1 = Float.parseFloat(textView.getText().toString());
+                op = "+";
+                textView.setText("+");
+            }
         }
         else if (id == R.id.btnSub){
-            if(flag == true){
+            flagPoint = true;
+            if(flagNum2 == true){
                 equal();
             }
-            num1 = Float.parseFloat(textView.getText().toString());
-            op = "-";
-            textView.setText("-");
+            if(op != "") {
+                textView.getText().toString();
+                op = "-";
+                textView.setText("-");
+            }
+            else {
+                num1 = Float.parseFloat(textView.getText().toString());
+                op = "-";
+                textView.setText("-");
+            }
         }
         else if (id == R.id.btnMul){
-            if(flag == true){
+            flagPoint = true;
+            if(flagNum2 == true){
                 equal();
             }
-            num1 = Float.parseFloat(textView.getText().toString());
-            op = "×";
-            textView.setText("×");
+            if(op != "") {
+                textView.getText().toString();
+                op = "×";
+                textView.setText("×");
+            }
+            else {
+                num1 = Float.parseFloat(textView.getText().toString());
+                op = "×";
+                textView.setText("×");
+            }
         }
         else if (id == R.id.btnDiv){
-            if(flag == true){
-                equal();
+            flagPoint = true;
+            if(flagNum2 == true){
+                equal(); btnDiv.cancelLongPress();
             }
-            num1 = Float.parseFloat(textView.getText().toString());
-            op = "÷";
-            textView.setText("÷");
+            if(op != "") {
+                textView.getText().toString();
+                op = "÷";
+                textView.setText("÷");
+            }
+            else {
+                num1 = Float.parseFloat(textView.getText().toString());
+                op = "÷";
+                textView.setText("÷");
+            }
         }
         else if (id == R.id.btnPer){
-            if(flag == true){
+            flagPoint = true;
+            if(flagNum2 == true){
                 equal();
             }
-            num1 = Float.parseFloat(textView.getText().toString());
-            op = "%";
-            textView.setText("%");
+            if(op != "") {
+                textView.getText().toString();
+                op = "%";
+                textView.setText("%");
+            }
+            else {
+                num1 = Float.parseFloat(textView.getText().toString());
+                op = "%";
+                textView.setText("%");
+            }
         }
         else if (id == R.id.btnEqual){
-            equal();
+            if(op != "" && flagNum2 == false)
+                Toast.makeText(MainActivity.this , R.string.info1 , Toast.LENGTH_LONG).show();
+            else
+                equal();
         }
         else if (id == R.id.btnAC){
             num1 = num2 = 0;
             op = "";
             textView.setText("0 ");
-            flag = false;
+            flagNum2 = false;
+            flagPoint = true;
         }
-        else if (id == R.id.btnC){
+        else if (id == R.id.btnSign){
             float number = Float.parseFloat(textView.getText().toString());
             if (number != 0)
                 textView.setText((number * -1)+"");
@@ -119,12 +167,12 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText(tmp+number);
         }
         else {
-            if (flag == false){
+            if (flagNum2 == false){
                 if(number == ".")
                     textView.setText("0.");
                 else
                     textView.setText(number);
-                 flag = true;
+                flagNum2 = true;
             }
             else
                 textView.setText(tmp+number);
@@ -152,13 +200,13 @@ public class MainActivity extends AppCompatActivity {
         textView.setText(result+"");
         num1 = num2 = 0;
         op = "";
-        flag = false;
+        flagNum2 = false;
     }
 
     void findViews(){
         textView = findViewById(R.id.textView);
         btnAC = findViewById(R.id.btnAC);
-        btnC = findViewById(R.id.btnC);
+        btnSign = findViewById(R.id.btnSign);
         btnDiv = findViewById(R.id.btnDiv);
         btnMul = findViewById(R.id.btnMul);
         btnSub = findViewById(R.id.btnSub);
@@ -191,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
         btn9.setBackgroundColor(getColor(R.color.dimGray));
         btnPoint.setBackgroundColor(getColor(R.color.dimGray));
         btnAC.setBackgroundColor(getColor(R.color.lightGray));
-        btnC.setBackgroundColor(getColor(R.color.lightGray));
+        btnSign.setBackgroundColor(getColor(R.color.lightGray));
         btnPer.setBackgroundColor(getColor(R.color.lightGray));
         btnDiv.setBackgroundColor(getColor(R.color.orange));
         btnMul.setBackgroundColor(getColor(R.color.orange));

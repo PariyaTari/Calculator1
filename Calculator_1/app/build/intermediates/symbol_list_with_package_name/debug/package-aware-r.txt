@@ -2627,12 +2627,12 @@ id btn8
 id btn9
 id btnAC
 id btnAdd
-id btnC
 id btnDiv
 id btnEqual
 id btnMul
 id btnPer
 id btnPoint
+id btnSign
 id btnSub
 id buttonPanel
 id cache_measures
@@ -3257,6 +3257,7 @@ string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string info
+string info1
 string item_view_role_description
 string label
 string m3_ref_typeface_brand_medium

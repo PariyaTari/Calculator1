@@ -62,7 +62,7 @@
                     android:topRightRadius="300dp" />
 
                 <Button
-                    android:id="@+id/btnC"
+                    android:id="@+id/btnSign"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"

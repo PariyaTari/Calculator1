@@ -25,12 +25,12 @@ id btn8
 id btn9
 id btnAC
 id btnAdd
-id btnC
 id btnDiv
 id btnEqual
 id btnMul
 id btnPer
 id btnPoint
+id btnSign
 id btnSub
 id textView
 layout activity_main
@@ -38,4 +38,5 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
 string info
+string info1
 style Theme.Calculator_1
