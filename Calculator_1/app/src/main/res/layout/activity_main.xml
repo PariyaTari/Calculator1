@@ -50,16 +50,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
-                    android:bottomLeftRadius="300dp"
-                    android:bottomRightRadius="300dp"
+                    android:background="@drawable/shape_1"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="AC"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:topLeftRadius="300dp"
-                    android:topRightRadius="300dp" />
+                    android:textColor="@drawable/text_color_1"
+                    android:textSize="34sp"
+                    android:textStyle="normal" />
 
                 <Button
                     android:id="@+id/btnSign"
@@ -67,12 +64,12 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape_1"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="+/-"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_1"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/btnPer"
@@ -80,12 +77,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape_1"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="%"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_1"
+                    android:textSize="38sp"
+                    android:textStyle="normal" />
 
                 <Button
                     android:id="@+id/btnDiv"
@@ -93,12 +91,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape_2"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="÷"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_3"
+                    android:textSize="38sp"
+                    android:textStyle="normal" />
             </LinearLayout>
 
             <LinearLayout
@@ -113,12 +112,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="7"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_2"
+                    android:textSize="34sp"
+                    android:textStyle="normal" />
 
                 <Button
                     android:id="@+id/btn8"
@@ -126,12 +126,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="8"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_2"
+                    android:textSize="34sp"
+                    android:textStyle="normal" />
 
                 <Button
                     android:id="@+id/btn9"
@@ -139,12 +140,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="9"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_2"
+                    android:textSize="34sp"
+                    android:textStyle="normal" />
 
                 <Button
                     android:id="@+id/btnMul"
@@ -152,12 +154,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape_2"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="×"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_3"
+                    android:textSize="38sp"
+                    android:textStyle="normal" />
             </LinearLayout>
 
             <LinearLayout
@@ -172,12 +175,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="4"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_2"
+                    android:textSize="34sp"
+                    android:textStyle="normal" />
 
                 <Button
                     android:id="@+id/btn5"
@@ -185,12 +189,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="5"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_2"
+                    android:textSize="34sp"
+                    android:textStyle="normal" />
 
                 <Button
                     android:id="@+id/btn6"
@@ -198,12 +203,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="6"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_2"
+                    android:textSize="34sp"
+                    android:textStyle="normal" />
 
                 <Button
                     android:id="@+id/btnSub"
@@ -211,12 +217,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape_2"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="-"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_3"
+                    android:textSize="38sp"
+                    android:textStyle="normal" />
             </LinearLayout>
 
             <LinearLayout
@@ -231,12 +238,12 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="1"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_2"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/btn2"
@@ -244,12 +251,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="2"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_2"
+                    android:textSize="34sp"
+                    android:textStyle="normal" />
 
                 <Button
                     android:id="@+id/btn3"
@@ -257,12 +265,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="3"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_2"
+                    android:textSize="34sp"
+                    android:textStyle="normal" />
 
                 <Button
                     android:id="@+id/btnAdd"
@@ -270,12 +279,13 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
+                    android:background="@drawable/shape_2"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="+"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@drawable/text_color_3"
+                    android:textSize="38sp"
+                    android:textStyle="normal" />
             </LinearLayout>
 
             <LinearLayout
@@ -297,12 +307,13 @@
                         android:layout_height="match_parent"
                         android:layout_margin="7dp"
                         android:layout_weight="1"
+                        android:background="@drawable/shape_3"
                         android:gravity="center|left"
                         android:onClick="buttonPressed"
-                        android:text="0"
-                        android:textColor="@color/white"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:text="    0"
+                        android:textColor="@drawable/text_color_2"
+                        android:textSize="34sp"
+                        android:textStyle="normal" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -313,29 +324,31 @@
 
                     <Button
                         android:id="@+id/btnPoint"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="7dp"
                         android:layout_weight="1"
+                        android:background="@drawable/shape"
                         android:gravity="center"
                         android:onClick="buttonPressed"
                         android:text="."
-                        android:textColor="@color/white"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textColor="@drawable/text_color_2"
+                        android:textSize="38sp"
+                        android:textStyle="normal" />
 
                     <Button
                         android:id="@+id/btnEqual"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="7dp"
                         android:layout_weight="1"
+                        android:background="@drawable/shape_2"
                         android:gravity="center"
                         android:onClick="buttonPressed"
                         android:text="="
-                        android:textColor="@color/white"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textColor="@drawable/text_color_3"
+                        android:textSize="38sp"
+                        android:textStyle="normal" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

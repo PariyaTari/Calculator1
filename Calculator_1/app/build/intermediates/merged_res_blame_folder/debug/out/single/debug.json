@@ -28,12 +28,24 @@
         "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\merged_res\\debug\\drawable_shape_3.xml.flat",
+        "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\drawable\\shape_3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\merged_res\\debug\\drawable_text_color_3.xml.flat",
+        "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\drawable\\text_color_3.xml"
+    },
+    {
         "merged": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\merged_res\\debug\\drawable_text_color_2.xml.flat",
+        "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\drawable\\text_color_2.xml"
     },
     {
         "merged": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -48,12 +60,24 @@
         "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\merged_res\\debug\\drawable_shape_2.xml.flat",
+        "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\drawable\\shape_2.xml"
+    },
+    {
         "merged": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\merged_res\\debug\\drawable_text_color_1.xml.flat",
+        "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\drawable\\text_color_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\merged_res\\debug\\drawable_shape_1.xml.flat",
+        "source": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\src\\main\\res\\drawable\\shape_1.xml"
     },
     {
         "merged": "C:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",

@@ -2513,8 +2513,14 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable shape
+drawable shape_1
+drawable shape_2
+drawable shape_3
 drawable test_custom_background
 drawable test_level_drawable
+drawable text_color_1
+drawable text_color_2
+drawable text_color_3
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
