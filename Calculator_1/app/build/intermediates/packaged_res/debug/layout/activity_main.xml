@@ -80,6 +80,7 @@
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="%"
+                    android:textColor="@drawable/text_color_1"
                     android:textSize="38sp"
                     android:textStyle="normal" />
 
@@ -92,6 +93,7 @@
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="÷"
+                    android:textColor="@drawable/text_color_3"
                     android:textSize="38sp"
                     android:textStyle="normal" />
             </LinearLayout>
@@ -153,6 +155,7 @@
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="×"
+                    android:textColor="@drawable/text_color_3"
                     android:textSize="38sp"
                     android:textStyle="normal" />
             </LinearLayout>
@@ -214,6 +217,7 @@
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="-"
+                    android:textColor="@drawable/text_color_3"
                     android:textSize="38sp"
                     android:textStyle="normal" />
             </LinearLayout>
@@ -274,6 +278,7 @@
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="+"
+                    android:textColor="@drawable/text_color_3"
                     android:textSize="38sp"
                     android:textStyle="normal" />
             </LinearLayout>
