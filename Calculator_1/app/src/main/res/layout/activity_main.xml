@@ -77,25 +77,21 @@
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
-                    android:background="@drawable/shape_1"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="%"
-                    android:textColor="@drawable/text_color_1"
                     android:textSize="38sp"
                     android:textStyle="normal" />
 
                 <Button
                     android:id="@+id/btnDiv"
-                    android:layout_width="wrap_content"
+                    android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
-                    android:background="@drawable/shape_2"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="÷"
-                    android:textColor="@drawable/text_color_3"
                     android:textSize="38sp"
                     android:textStyle="normal" />
             </LinearLayout>
@@ -150,15 +146,13 @@
 
                 <Button
                     android:id="@+id/btnMul"
-                    android:layout_width="wrap_content"
+                    android:layout_width="84dp"
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
-                    android:background="@drawable/shape_2"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="×"
-                    android:textColor="@drawable/text_color_3"
                     android:textSize="38sp"
                     android:textStyle="normal" />
             </LinearLayout>
@@ -213,15 +207,13 @@
 
                 <Button
                     android:id="@+id/btnSub"
-                    android:layout_width="wrap_content"
+                    android:layout_width="84dp"
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
-                    android:background="@drawable/shape_2"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="-"
-                    android:textColor="@drawable/text_color_3"
                     android:textSize="38sp"
                     android:textStyle="normal" />
             </LinearLayout>
@@ -275,15 +267,13 @@
 
                 <Button
                     android:id="@+id/btnAdd"
-                    android:layout_width="wrap_content"
+                    android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
-                    android:background="@drawable/shape_2"
                     android:gravity="center"
                     android:onClick="buttonPressed"
                     android:text="+"
-                    android:textColor="@drawable/text_color_3"
                     android:textSize="38sp"
                     android:textStyle="normal" />
             </LinearLayout>
@@ -338,7 +328,7 @@
 
                     <Button
                         android:id="@+id/btnEqual"
-                        android:layout_width="match_parent"
+                        android:layout_width="191dp"
                         android:layout_height="match_parent"
                         android:layout_margin="7dp"
                         android:layout_weight="1"

@@ -2514,7 +2514,9 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable shape
 drawable shape_1
+drawable shape_1_1
 drawable shape_2
+drawable shape_2_2
 drawable shape_3
 drawable test_custom_background
 drawable test_level_drawable

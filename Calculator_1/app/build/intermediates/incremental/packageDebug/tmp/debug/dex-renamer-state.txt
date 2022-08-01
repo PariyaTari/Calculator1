@@ -1,4 +1,4 @@
-#Sun Jul 24 18:17:03 IRDT 2022
+#Mon Aug 01 20:44:18 IRDT 2022
 base.2=C\:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
 path.2=11/classes.dex
 base.1=C\:\\Users\\Pariya\\Desktop\\Android Progect\\Calculator_1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

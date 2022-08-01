@@ -2,9 +2,9 @@ package com.example.calculator_1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,11 +19,22 @@ public class MainActivity extends AppCompatActivity {
     boolean flagNum2 = false;
     boolean flagPoint = true;
 
+    @SuppressLint({"UseCompatLoadingForDrawables", "ResourceType"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViews();
+        btnDiv.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+        btnMul.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+        btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+        btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+        btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1));
+        btnAdd.setTextColor(getColor(R.color.white));
+        btnSub.setTextColor(getColor(R.color.white));
+        btnMul.setTextColor(getColor(R.color.white));
+        btnDiv.setTextColor(getColor(R.color.white));
+        btnPer.setTextColor(getColor(R.color.black));
     }
 
     public void buttonPressed(View view){
@@ -55,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         else if (id == R.id.btnAdd){
+            color(id);
             flagPoint = true;
             if(flagNum2){
                 equal();
@@ -69,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         else if (id == R.id.btnSub){
+            color(id);
             flagPoint = true;
             if(flagNum2){
                 equal();
@@ -82,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         else if (id == R.id.btnMul){
+            color(id);
             flagPoint = true;
             if(flagNum2){
                 equal();
@@ -95,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         else if (id == R.id.btnDiv){
+            color(id);
             flagPoint = true;
             if(flagNum2){
                 equal(); btnDiv.cancelLongPress();
@@ -108,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         else if (id == R.id.btnPer){
+            color(id);
             flagPoint = true;
             if(flagNum2){
                 equal();
@@ -121,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         else if (id == R.id.btnEqual){
+            color(id);
             flagPoint = false;
             if(!op.equals("") && !flagNum2)
                 Toast.makeText(MainActivity.this , R.string.info1 , Toast.LENGTH_LONG).show();
@@ -128,6 +145,7 @@ public class MainActivity extends AppCompatActivity {
                 equal();
         }
         else if (id == R.id.btnAC){
+            color(id);
             num1 = num2 = 0;
             op = "";
             textView.setText("0 ");
@@ -197,12 +215,12 @@ public class MainActivity extends AppCompatActivity {
 
     void setOp (String op){
         num1 = Float.parseFloat(textView.getText().toString());
-        textView.setText(op);
+//        textView.setText(String.format("%s%s", num1, op));
     }
 
     void checking (String op){
-        textView.getText();
-        textView.setText(op);
+//        textView.getText();
+//        textView.setText(String.format("%s%s", num1, op));
         this.op = op;
     }
 
@@ -227,5 +245,82 @@ public class MainActivity extends AppCompatActivity {
         btn7 = findViewById(R.id.btn7);
         btn8 = findViewById(R.id.btn8);
         btn9 = findViewById(R.id.btn9);
+    }
+
+    @SuppressLint("UseCompatLoadingForDrawables")
+    public void color(int id){
+        if(id == R.id.btnAdd) {
+            btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2_2));
+            btnAdd.setTextColor(getColor(R.color.orange));
+            btnDiv.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnMul.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1));
+            btnAdd.setTextColor(getColor(R.color.orange));
+            btnSub.setTextColor(getColor(R.color.white));
+            btnMul.setTextColor(getColor(R.color.white));
+            btnDiv.setTextColor(getColor(R.color.white));
+            btnPer.setTextColor(getColor(R.color.black));
+        }
+        if(id == R.id.btnSub){
+            btnDiv.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnMul.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2_2));
+            btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1));
+            btnAdd.setTextColor(getColor(R.color.white));
+            btnSub.setTextColor(getColor(R.color.orange));
+            btnMul.setTextColor(getColor(R.color.white));
+            btnDiv.setTextColor(getColor(R.color.white));
+            btnPer.setTextColor(getColor(R.color.black));
+        }
+        if(id == R.id.btnMul){
+            btnDiv.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnMul.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2_2));
+            btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1));
+            btnAdd.setTextColor(getColor(R.color.white));
+            btnSub.setTextColor(getColor(R.color.white));
+            btnMul.setTextColor(getColor(R.color.orange));
+            btnDiv.setTextColor(getColor(R.color.white));
+            btnPer.setTextColor(getColor(R.color.black));
+        }
+        if(id == R.id.btnDiv){
+            btnDiv.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2_2));
+            btnMul.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1));
+            btnAdd.setTextColor(getColor(R.color.white));
+            btnSub.setTextColor(getColor(R.color.white));
+            btnMul.setTextColor(getColor(R.color.white));
+            btnDiv.setTextColor(getColor(R.color.orange));
+            btnPer.setTextColor(getColor(R.color.black));
+        }
+        if(id == R.id.btnPer){
+            btnDiv.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnMul.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1_1));
+            btnAdd.setTextColor(getColor(R.color.white));
+            btnSub.setTextColor(getColor(R.color.white));
+            btnMul.setTextColor(getColor(R.color.white));
+            btnDiv.setTextColor(getColor(R.color.white));
+            btnPer.setTextColor(getColor(R.color.black));
+        }
+        if(id == R.id.btnAC || id == R.id.btnEqual){
+            btnDiv.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnMul.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
+            btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1));
+            btnAdd.setTextColor(getColor(R.color.white));
+            btnSub.setTextColor(getColor(R.color.white));
+            btnMul.setTextColor(getColor(R.color.white));
+            btnDiv.setTextColor(getColor(R.color.white));
+            btnPer.setTextColor(getColor(R.color.black));
+        }
     }
 }

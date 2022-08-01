@@ -14,7 +14,9 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable shape
 drawable shape_1
+drawable shape_1_1
 drawable shape_2
+drawable shape_2_2
 drawable shape_3
 drawable text_color_1
 drawable text_color_2
