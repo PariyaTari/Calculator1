@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
         btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
         btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1));
-        btnAdd.setTextColor(getColor(R.color.white));
-        btnSub.setTextColor(getColor(R.color.white));
-        btnMul.setTextColor(getColor(R.color.white));
-        btnDiv.setTextColor(getColor(R.color.white));
+        btnAdd.setTextColor(getColor(R.drawable.text_color_3));
+        btnSub.setTextColor(getColor(R.drawable.text_color_3));
+        btnMul.setTextColor(getColor(R.drawable.text_color_3));
+        btnDiv.setTextColor(getColor(R.drawable.text_color_3));
         btnPer.setTextColor(getColor(R.color.black));
     }
 
@@ -247,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
         btn9 = findViewById(R.id.btn9);
     }
 
-    @SuppressLint("UseCompatLoadingForDrawables")
+    @SuppressLint({"UseCompatLoadingForDrawables", "ResourceType"})
     public void color(int id){
         if(id == R.id.btnAdd) {
             btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2_2));
@@ -257,9 +257,9 @@ public class MainActivity extends AppCompatActivity {
             btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
             btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1));
             btnAdd.setTextColor(getColor(R.color.orange));
-            btnSub.setTextColor(getColor(R.color.white));
-            btnMul.setTextColor(getColor(R.color.white));
-            btnDiv.setTextColor(getColor(R.color.white));
+            btnSub.setTextColor(getColor(R.drawable.text_color_3));
+            btnMul.setTextColor(getColor(R.drawable.text_color_3));
+            btnDiv.setTextColor(getColor(R.drawable.text_color_3));
             btnPer.setTextColor(getColor(R.color.black));
         }
         if(id == R.id.btnSub){
@@ -268,10 +268,10 @@ public class MainActivity extends AppCompatActivity {
             btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2_2));
             btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
             btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1));
-            btnAdd.setTextColor(getColor(R.color.white));
+            btnAdd.setTextColor(getColor(R.drawable.text_color_3));
             btnSub.setTextColor(getColor(R.color.orange));
-            btnMul.setTextColor(getColor(R.color.white));
-            btnDiv.setTextColor(getColor(R.color.white));
+            btnMul.setTextColor(getColor(R.drawable.text_color_3));
+            btnDiv.setTextColor(getColor(R.drawable.text_color_3));
             btnPer.setTextColor(getColor(R.color.black));
         }
         if(id == R.id.btnMul){
@@ -280,10 +280,10 @@ public class MainActivity extends AppCompatActivity {
             btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
             btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
             btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1));
-            btnAdd.setTextColor(getColor(R.color.white));
-            btnSub.setTextColor(getColor(R.color.white));
+            btnAdd.setTextColor(getColor(R.drawable.text_color_3));
+            btnSub.setTextColor(getColor(R.drawable.text_color_3));
             btnMul.setTextColor(getColor(R.color.orange));
-            btnDiv.setTextColor(getColor(R.color.white));
+            btnDiv.setTextColor(getColor(R.drawable.text_color_3));
             btnPer.setTextColor(getColor(R.color.black));
         }
         if(id == R.id.btnDiv){
@@ -292,9 +292,9 @@ public class MainActivity extends AppCompatActivity {
             btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
             btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
             btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1));
-            btnAdd.setTextColor(getColor(R.color.white));
-            btnSub.setTextColor(getColor(R.color.white));
-            btnMul.setTextColor(getColor(R.color.white));
+            btnAdd.setTextColor(getColor(R.drawable.text_color_3));
+            btnSub.setTextColor(getColor(R.drawable.text_color_3));
+            btnMul.setTextColor(getColor(R.drawable.text_color_3));
             btnDiv.setTextColor(getColor(R.color.orange));
             btnPer.setTextColor(getColor(R.color.black));
         }
@@ -304,10 +304,10 @@ public class MainActivity extends AppCompatActivity {
             btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
             btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
             btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1_1));
-            btnAdd.setTextColor(getColor(R.color.white));
-            btnSub.setTextColor(getColor(R.color.white));
-            btnMul.setTextColor(getColor(R.color.white));
-            btnDiv.setTextColor(getColor(R.color.white));
+            btnAdd.setTextColor(getColor(R.drawable.text_color_3));
+            btnSub.setTextColor(getColor(R.drawable.text_color_3));
+            btnMul.setTextColor(getColor(R.drawable.text_color_3));
+            btnDiv.setTextColor(getColor(R.drawable.text_color_3));
             btnPer.setTextColor(getColor(R.color.black));
         }
         if(id == R.id.btnAC || id == R.id.btnEqual){
@@ -316,10 +316,10 @@ public class MainActivity extends AppCompatActivity {
             btnSub.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
             btnAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_2));
             btnPer.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_1));
-            btnAdd.setTextColor(getColor(R.color.white));
-            btnSub.setTextColor(getColor(R.color.white));
-            btnMul.setTextColor(getColor(R.color.white));
-            btnDiv.setTextColor(getColor(R.color.white));
+            btnAdd.setTextColor(getColor(R.drawable.text_color_3));
+            btnSub.setTextColor(getColor(R.drawable.text_color_3));
+            btnMul.setTextColor(getColor(R.drawable.text_color_3));
+            btnDiv.setTextColor(getColor(R.drawable.text_color_3));
             btnPer.setTextColor(getColor(R.color.black));
         }
     }
